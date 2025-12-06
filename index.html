@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title></title>
+</head>
+<body>
+    <section class="a">
+        <div class="Acontwrap">
+            <div class="albl">
+                IRS REFUND TRACKING
+            </div>
+            <div class="ablock1">
+                <div class="htxt">
+                    <p>Where's my refund?</p>
+                </div>
+                <div class="stxt">
+                    <p>The IRS sends most refunds within 3 weeks of processing your e-return. Want to know where yours is in process? Follow these steps.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="b">
+        <div class="Bcontwrap">
+            <div class="bblock1">
+                <div class="htxt">
+                    <p>How IRS refund tracking works</p>
+                </div>
+                <div class="stxt">
+                    <p>To check your federal tax refund status, go to the IRS' Where's My Refund tool and enter this info:</p>
+                </div>
+            </div>
+            <div class="bblock2">
+                <div class="ilww">
+                <div class="ilwrap">
+                    <div class="ill">
+                        <img src="https://media.istockphoto.com/id/505271898/vector/social-security-card.jpg?s=612x612&w=0&k=20&c=N_Hwq0Sh_LuwHqjDJ_s8O9IcrrExbKJkzkf-BRq3d4Y=" alt="">
+                    </div>
+                    <div class="illdet">
+                        <p>1. Enter the SSN or ITIN shown on your tax return</p>
+                    </div>
+                </div>
+                <div class="ilwrap">
+                    <div class="ill">
+                        <img src="https://media.istockphoto.com/id/1496586656/vector/happy-big-family-with-children-parents-and-grandparents-three-generations-stand-and-embrace.jpg?s=612x612&w=0&k=20&c=4gaYSKzjBowoa6GUbv8Sx1ZaBvygxBqooHW1OawmXyM=" alt="">
+                    </div>
+                    <div class="illdet">
+                        <p>2. Select the filing status shown on your tax return</p>
+                    </div>
+                </div>
+                <div class="ilwrap">
+                    <div class="ill">
+                        <img src="https://media.istockphoto.com/id/1422839825/vector/abstract-money-paper-bills-and-gold-coins-3d-dollar-banknotes-currency-bank-notes-finance.jpg?s=612x612&w=0&k=20&c=O68ZsGmYnDGr3QWGzbiYAugGSQFj6OaWdOna7G_omdI=" alt="">
+                    </div>
+                    <div class="illdet">
+                        <p>3. Enter the refund amount shown on your tax return</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="bblock3">
+                <div class="gtibtn">
+                    <button>Go to the IRS tool</button>
+                </div>
+                <div class="stxt">
+                    <p>Don't forget to add 2 to 5 extra days for your bank to process the deposit after the date indicated by IRS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="c">
+        <div class="Ccontwrap">
+
+            <div class="cblock1">
+                <div class="htxt">
+                    <p>IRS Refund Time Estimator</p>
+                </div>
+            </div>
+          <div class="rtefrm">
+            <label>Date you filed your return:</label>
+            <input class="dt" type="date" id="filed_date">
+          
+            <label>How did you file?</label>
+            <select id="filed_method">
+              <option value="efile">E-File</option>
+              <option value="paper">Paper</option>
+            </select>
+          
+            <label>Refund Method:</label>
+            <select id="refund_method">
+              <option value="direct_deposit">Direct Deposit</option>
+              <option value="check_mail">Check (Mail)</option>
+              <option value="prepaid_card">Prepaid Card</option>
+            </select>
+          
+            <label>Was your return accepted by the IRS?</label>
+            <select id="irs_accepted">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="unknown">Don't Know</option>
+            </select>
+        </div>
+        <div class="rteact">
+            <button onclick="calculate()">Estimate</button>
+        </div>
+            <div id="output"></div>
+          </div>
+    </section>
+
+
+    <section class="d">
+        <div class="Dcontwrap">
+            <div class="dblock1">
+                <div class="htxt">
+                    <p>Check your state tax refund status</p>
+                </div>
+            </div>
+        </div>
+            <div class="block2">
+                <div class="stsel">
+                <label for="stateSelect">Select Your State:</label>
+                <select id="stateSelect" class="xselcst">
+                  <option value="">-- Select State --</option>
+                </select>
+            </div>
+            <div class="vsblk">
+                <button class="vstrf" onclick="openRefundPage()">View My State Refund Status</button>
+            </div>
+            </div>
+        
+    </section>
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="est.js"></script>
+    <script src="stref.js"></script>
+</body>
+</html>
