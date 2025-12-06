@@ -266,3 +266,31 @@ body{
     font-weight: 600;
 
 }
+@media screen and (min-width: 768px){
+    .a{
+        /* background: lime; */
+    }
+    .Ccontwrap,.block2{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .ccw{
+        max-width: 460px;
+    }
+    .db2w{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 991px){
+    .bblock2,.ilww{
+        display: flex;
+        flex-direction: row;
+    }
+    .a,.d{
+        padding: 200px 40px;
+    }
+}
